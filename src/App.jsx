@@ -1,30 +1,8 @@
-# 🚀 React Flash Modal Component
-
-A lightweight and flexible React modal component with smooth animations and easy customization. Perfect for modern web applications. Can be easily integrated into any project. Can be easily integrated into any project.
-
-## 📦 Installation
-
-Install via npm:
-
-```bash
-npm install react-flash-modal
-```
-
-Install via yarn:
-
-```bash
-yarn add react-flash-modal
-```
-
-## 🚀 Usage
-
-```javascript
 import { useState } from "react";
-import { ModalPortal } from "react-flash-modal";
+import ModalPortal from "./components/ModalPortal";
+import "./App.css";
 
-import "react-flash-modal/dist/modal.css"; // import CSS file (important)
-
-function App() {
+function App(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   // open modal
@@ -91,63 +69,3 @@ function App() {
 }
 
 export default App;
-
-```
-
-# Example
-
-Click here to view. [here](https://react-easy-modal.netlify.app/)
-
-## ⚙️ Props
-
-| Prop | Description                                         | Type | Default |
-|------|-----------------------------------------------------|------|---------|
-| isOpen | To open/close a modal. | boolean | false |
-| onClose | Function to be triggered when the modal is closed. | function | closeModal() |
-| background | For general background. | object | { color: "#00000050", blur: { size: "2px" }, maxWidth: "", zIndex: 2 } |
-| modalContent | To handle the general modal itself. | object | { width: "60%", isModalTop: {visible: false, name: "Modal name", ...} } |
-| children | Content inside the modal. | React Node | |
-| className | To add an additional class to a modal. | string | "" |
-
-## Why Use `react-flash-modal`?
-
-1. 🚀 Lightweight & Fast – Minimal bundle size for better performance.
-2. 🎨 Fully Customizable – Easily style the modal to match your design.
-3. 🛠️ Simple API – Intuitive props for quick integration.
-4. 🎬 Smooth Animations – Built-in transitions for a modern look.
-5. ⚡ Zero Dependencies – Works out of the box with React.
-6. 📱 Responsive & Accessible – Optimized for all screen sizes and keyboard navigation.
-
-Perfect for developers who need a flexible, easy-to-use modal component in React! 🚀
-
-### Keywords
-
-react-easy-modal, react-flash-modal, easy-react-modal, react-elevate-modal, react modal, modal component, react popup, easy modal, react dialog, modal with animation, lightweight modal, customizable modal, react-ui, modal for react, react easy modal, modal, react-smooth-modal, react-modal, react-lightbox-modal, react-awesome-modal, react-modern-modal, react-animated-modal, react-dialogx, react-glassy-modal, react-modal-pr"
-
-## Development
-
-To contribute or make changes, clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/hikmatjan1/react-easy-modal.git
-cd react-easy-modal
-npm install
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-## 📜 License
-
-React Easy Modal is open-source and available under the MIT License.
-
-## 🌟 Join and give a Star!
-
-If you like this modal, please give it a star on the GitHub repository! ⭐
-
-## Fixes
-
-1. You can use it starting from version 1.0.6, in previous versions it gave an error because it could not find an element with id. This error has been fixed. I apologize for the inconvenience.
